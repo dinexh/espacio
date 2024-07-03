@@ -1,0 +1,9 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+   .container{
+    display: none;
+   }
+   .moblie{
+    width: 100%;
+    background-color: red;
+   }
+}
