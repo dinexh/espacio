@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #f5f5f5;
     color: black;
@@ -23,6 +26,10 @@ header{
     padding: 0.8rem;
 }
 nav{
+    padding: 1rem;
+    background-color: blur(10px);
+    top: 0;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,7 +51,7 @@ nav{
     color: blue;
 }
 .nav-in-two{
-    width: 12%;
+    width: 15%;
     display: flex;
     justify-content: space-between;
     margin-right: 4rem;
@@ -154,3 +161,60 @@ main{
     width: 100%;
     border-radius: 20px;
 }
+/* skills section starts here */
+section#Skills{
+    height: 100vh;
+    /* margin-top: 7rem; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+skills-in{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+skills-heading{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:1rem;
+    margin-left: 2rem;
+}
+skills-heading h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+skills-heading span{
+    color: blue;
+}
+skills-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+skills-box{
+    /* background-color: red; */
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+}
+skills-box h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+skills-box p{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+/*  */
