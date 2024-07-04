@@ -25,7 +25,7 @@
             </div>
             <div class="nav-in-three">
                 <div class="nav-in-three-in">
-                    <i class="material-icons" style="font-size:2rem">chat</i>
+                    <button id="modal">click me</button>
                 </div>
             </div>
         </nav>
@@ -33,9 +33,9 @@
        <main>
         <div class="main-in">
             <div class="main-in-one">
-                <p>Hey,I'm Dinesh</p>
+                <p>Hey, I'm Dinesh</p>
                 <h1> <span>Full Stack</span> Developer</h1>
-                <h2>I'm a Web Developer | Linux Enthuasthi | Open Source </h2>
+                <h2>I'm a Web Developer | Linux Enthusiast | Open Source </h2>
                 <div class="main-in-one-button">
                     <button>
                         <a href="#">Contact Me</a>
@@ -49,25 +49,26 @@
                 <div class="main-in-two-in">
                     <img src="dinesh.jpeg" alt="">
                 </div>
+            </div>
         </div>
        </main>
-       <section id="Skills" >
+       <section id="Skills">
             <skills-in>
                 <skills-heading>
                     <h1>Skills <span>.</span></h1>
                 </skills-heading>
                 <skills-main>
                     <skills-box>
-                        <h1>Fontend</h1>
+                        <h1>Frontend</h1>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>JavaScript</p>
                     </skills-box>
                     <skills-box>
                         <h1>Backend</h1>
-                        <p>php</p>
-                        <p>python</p>
-                        <p>mysql</p>
+                        <p>PHP</p>
+                        <p>Python</p>
+                        <p>MySQL</p>
                     </skills-box>
                     <skills-box>
                         <h1>Languages</h1>
@@ -87,11 +88,11 @@
                         <p>Figma</p>
                     </skills-box>
                 </skills-main>
-            <skills-in>
+            </skills-in>
        </section>
        <footer>
         <div class="footer-in-one">
-            <p>Desiged and Developed by Dinesh Korukonda</p>
+            <p>Designed and Developed by Dinesh Korukonda</p>
         </div>
         <div class="footer-in-two">
             <a href="#">
@@ -106,37 +107,22 @@
         </div>
        </footer>
     </div>
-    <div id="helpModal" class="modal">
-        <div class="modal-content">
-            <div class="help-heading">
-                <span class="close" onclick="closeHelpModal()">&times;</span>
-                <h2>Help Form</h2>
+    <div class="modal" id="mymodal">
+        <div class="modal-in">
+            <div class="modal-heading">
+                <p>Contact</p>
+                <span class="close">&times;</span>
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="helpName">Name:</label>
-                    <input type="text" id="helpName" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="helpEmail">Email:</label>
-                    <input type="text" id="helpEmail" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="helpIssue">Issue:</label>
-                    <select id="helpIssue">
-                        <option value="login">Login</option>
-                        <option value="signup">Signup</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="helpQuery">Your Query:</label>
-                    <textarea id="helpQuery" placeholder="Describe your issue"></textarea>
-                </div>
-                <button type="button" onclick="submitHelpForm()">Submit</button>
-            </form>
+           <div class="modal-content">
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Submit</button>
+               </form>
+           </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
