@@ -87,12 +87,10 @@ main{
     padding: 1rem;
 }
 .main-in{
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 1rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .main-in-one{
     width: 50%;
@@ -139,4 +137,20 @@ main{
 }
 .main-in-one button:hover a{
     color: white;
+}
+.main-in-two{
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-in-two-in{
+    width: 80%;
+    /* background-color: red; */
+    border-radius: 20px;
+}
+.main-in-two-in img{
+    width: 100%;
+    border-radius: 20px;
 }
