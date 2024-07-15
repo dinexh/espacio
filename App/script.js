@@ -15,7 +15,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-//for the fliter of catorties of projects
+
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectBoxes = document.querySelectorAll('.project-box');
@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Display all projects by default
     filterProjects('all');
 });
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+});
+
