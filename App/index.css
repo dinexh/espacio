@@ -182,7 +182,7 @@ main{
 }
 /* skills section starts here */
 section#Skills{
-    height: 100vh;
+    min-height: 100vh;
     /* margin-top: 7rem; */
     width: 100%;
     display: flex;
@@ -238,9 +238,10 @@ skills-box p{
 }
 /* projects section starts here */
 section#projects{
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
     padding: 1rem;
+    /* background-color: red; */
 }
 .projects-in{
     width: 100%;
