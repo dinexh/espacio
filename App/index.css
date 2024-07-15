@@ -38,7 +38,7 @@ nav{
     transition: border 300ms ease-out; 
 }
 nav.sticky {
-    background-color: rgba(160, 205, 233, 0.43); 
+    background-color: rgb(0, 155, 252); 
     /* padding: 2rem; */
     padding: 1.5rem;
     height: 5vh;
@@ -298,6 +298,24 @@ section#projects{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* about me section starts here */
+section#about{
+
+    /* min-height: 80vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.about-in{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
 }
 /* contact modal css starts here */
 .modal{
